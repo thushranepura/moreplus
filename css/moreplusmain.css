@@ -1,0 +1,283 @@
+/*
+(c)2014 Thushara Ranepura  thushara.ranepura@gmail.com
+*/
+/* 
+    Created on : 16/01/2015, 11:11:14 PM
+    Author     : thushranepura
+*/
+.main-border-radius {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.socialMediaGeneralSettings {
+  background-size: contain;
+  background-position: center;
+  height: 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+}
+.loginbox-wrapper {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 0px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.loginbox-wrapper .form-signin {
+  max-width: 380px;
+  padding: 15px 0px 5px;
+  margin: 0 auto;
+}
+.loginbox-wrapper .form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+}
+.loginbox-wrapper .form-signin input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 100%;
+}
+.loginbox-wrapper .form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.loginbox-wrapper .form-signin .form-control:focus {
+  z-index: 2;
+}
+.loginbox-wrapper .form-signin .checkbox {
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+.loginbox-wrapper .form-signin .form-signin-heading {
+  margin-bottom: 30px;
+}
+.loginbox-wrapper .form-signin #logibox-actions-links {
+  text-align: center;
+}
+.loginbox-wrapper .form-signin #logibox-actions-links a #customsignup {
+  margin-right: 5px;
+}
+.loginbox-wrapper .form-signin #logibox-actions-links #login-error-custom {
+  color: red;
+  text-align: center;
+  margin-bottom: 5px;
+  height: 20px;
+  visibility: hidden;
+}
+.breadcrumb {
+  padding: 5px;
+  background-color: transparent;
+}
+.breadcrumb a {
+  color: #fff;
+}
+.breadcrumb > li + li:before {
+  content: "\20";
+  padding-right: 2px;
+}
+div #loginpagemain {
+  margin-top: -257px;
+}
+@media (min-width: 1200px) {
+  div #loginpagemain {
+    margin-top: -257px;
+  }
+}
+@media query4 {
+  div #loginpagemain {
+    margin-top: -277px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  div #loginpagemain {
+    margin-top: -277px;
+  }
+}
+@media (max-width: 767px) {
+  div #loginpagemain {
+    margin-top: 0px;
+  }
+}
+div #loginpagemain .carousel {
+  margin-bottom: 0px;
+}
+div #loginpagemain .carousel .item {
+  height: 700px;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  div #loginpagemain .carousel .item {
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  div #loginpagemain .carousel .item {
+    height: 300px;
+  }
+}
+div #loginpagemain .carousel .container {
+  position: relative;
+  z-index: 9;
+}
+div #loginpagemain .carousel .container .carousel-caption {
+  background-color: transparent;
+  position: static;
+  max-width: 550px;
+  padding: 0 30px;
+  margin-top: 300px;
+}
+div #loginpagemain .carousel .container .carousel-caption h1,
+div #loginpagemain .carousel .container .carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+div #loginpagemain .carousel .container .carousel-caption .btn {
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  div #loginpagemain .carousel .container .carousel-caption {
+    width: 65%;
+    padding: 0 70px;
+    margin-top: 100px;
+  }
+  div #loginpagemain .carousel .container .carousel-caption h1 {
+    font-size: 18px;
+  }
+  div #loginpagemain .carousel .container .carousel-caption .lead,
+  div #loginpagemain .carousel .container .carousel-caption .btn {
+    font-size: 12px;
+  }
+}
+div #loginpagemain .carousel .carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  border: 0;
+  z-index: 10;
+}
+@media (max-width: 767px) {
+  div #loginpagemain .carousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+@media (max-width: 767px) {
+  .main-logo-wrapper {
+    margin-bottom: 10px;
+  }
+  .loginbox-wrapper {
+    margin-bottom: 10px;
+  }
+}
+/* Featurettes
+------------------------- */
+.featurette {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+.featurette .featurette-image {
+  max-width: 500px;
+}
+.featurette .featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette .featurette-image.pull-right {
+  margin-left: 40px;
+}
+.featurette .featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+@media (max-width: 767px) {
+  .featurette .featurette-heading {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .featurette {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .featurette {
+    height: auto;
+    padding: 0;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .featurette {
+    margin-top: 10px;
+    padding-top: 0px;
+  }
+  .featurette .featurette .lead {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .featurette .featurette-image.pull-left,
+  .featurette .featurette-image.pull-right {
+    display: block;
+    float: none;
+    max-width: 40%;
+    margin: 0 auto 20px;
+  }
+}
+header#page-header-login {
+  font-size: 0.95em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#facebook-icon {
+  background-image: url([[pix:theme|facebook]]);
+  background-size: contain;
+  background-position: center;
+  height: 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+}
+#twitter-icon {
+  background-image: url([[pix:theme|twitter]]);
+  background-size: contain;
+  background-position: center;
+  height: 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+}
+#youtube-icon {
+  background-image: url([[pix:theme|youtube]]);
+  background-size: contain;
+  background-position: center;
+  height: 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+}
+.socialmedia {
+  float: right;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.socialmedia > a {
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .socialmedia {
+    top: 20%;
+  }
+}

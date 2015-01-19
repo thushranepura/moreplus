@@ -1,0 +1,19 @@
+
+
+
+/* Custom CSS
+-------------------------*/
+
+
+.main-logo-wrapper {
+    background:  url([[setting:logo]]) no-repeat 50% 0;
+    height: 98px;
+    width: 175px;
+    background-size: contain;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+/* Custom CSS Settings
+-------------------------*/
+[[setting:customcss]]

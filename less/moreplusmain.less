@@ -1,0 +1,329 @@
+/*
+ * @package    theme_moreplus
+ * @copyright  2015 Thushara Ranepura   thushara.ranepura@gmail.com    
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+//Variables
+@largeDesktop: ~"(min-width: 1200px)";
+@PortraitTabletLandscapeDesktop: ~"(min-width: 768px) and (max-width: 979px)";
+@LandscapePhonePortraitTablet: ~"(max-width: 767px)";
+@LandscapePhonesDown: ~"(max-width: 480px)";
+//@mediaquery3: ~"(max-width: 979px)";
+@mediaquery4: ~"(min-width: 979px) and (max-width: 1200px)";
+
+
+.main-border-radius{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; 
+}
+
+.socialMediaGeneralSettings{
+background-size: contain;
+background-position: center;
+height: 30px;
+background-repeat: no-repeat;
+width: 30px;
+
+}
+
+
+.loginbox-wrapper{   
+  
+    .main-border-radius;
+    padding: 20px;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.6);
+  
+   
+    .form-signin{
+        
+        max-width: 380px;
+        padding: 15px 0px 5px;
+        margin: 0 auto;
+        
+        input{
+            &[type="text"]{             
+                margin-bottom: -1px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                width: 100%;               
+            }
+            &[type="password"]{
+                margin-bottom: 20px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                width: 100%;
+
+            }
+        }
+        
+        .form-control{
+            position: relative;
+            font-size: 16px;
+            height: auto;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            &:focus{
+                z-index: 2;  
+            }           
+        }
+        
+        .checkbox{
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        
+        .form-signin-heading{
+            margin-bottom: 30px;
+        }
+        
+
+        #logibox-actions-links {
+            text-align: center;  
+            
+            a #customsignup{
+                margin-right: 5px;
+            }
+            a{
+              color:#fff;
+            }
+            #login-error-custom {
+                color: red;
+                text-align: center;
+                margin-bottom: 5px;
+                height: 20px;
+                visibility: hidden;
+            }            
+       }
+   } 
+   @media @largeDesktop{
+       max-height:175px;
+   }
+}
+
+
+
+
+
+
+.breadcrumb{
+    padding: 5px;
+    background-color: transparent;
+    a{
+        color:#fff;
+    }
+    & > li + li:before {
+        content: "\20";
+        padding-right: 2px;
+        
+    }
+    & > li {
+        color: #999;
+    } 
+    .main-border-radius;
+    background-color: lighten(#000, 10%);
+}
+
+
+div #loginpagemain {
+    
+        margin-top: -257px;
+        
+        @media @largeDesktop{          
+            margin-top: -257px;
+        }
+        
+        @media @mediaquery4 {
+        margin-top: -277px;
+        }
+        @media  @PortraitTabletLandscapeDesktop{
+         margin-top: -277px;   
+        }
+        @media @LandscapePhonePortraitTablet{
+            
+         margin-top: 0px;    
+            
+        }
+
+    .carousel {
+        margin-bottom: 0px;
+
+        .item {
+            height: 700px;
+            @media @PortraitTabletLandscapeDesktop{
+                height: 500px;
+                
+            }
+            @media @LandscapePhonePortraitTablet{
+                height: 300px;
+            }
+        }
+
+        .container{
+            position: relative;
+            z-index: 9;
+
+
+            .carousel-caption {
+                background-color: transparent;
+                position: static;
+                max-width: 550px;
+                padding: 0 30px;
+                margin-top: 300px;
+
+                h1, .lead{
+                    margin: 0;
+                    line-height: 1.25;
+                    color: #fff;
+                    text-shadow: 0 1px 1px rgba(0,0,0,.4);   
+                }
+
+                .btn {
+                    margin-top: 10px;
+                }
+                
+                @media @LandscapePhonePortraitTablet{
+                    width: 65%;
+                    padding: 0 70px;
+                    margin-top: 100px;
+                    h1 {
+                        font-size: 18px;
+                    }
+                    
+                    .lead,.btn{
+                        font-size: 12px;
+                    }
+
+                }
+            }
+        }
+
+        .carousel-control {
+            height: 80px;
+            margin-top: 0;
+            font-size: 120px;
+            text-shadow: 0 1px 1px rgba(0,0,0,.4);
+            background-color: transparent;
+            border: 0;
+            z-index: 10;
+        }
+        @media @LandscapePhonePortraitTablet{
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+        
+  }
+}
+
+
+@media @LandscapePhonePortraitTablet{
+   .main-logo-wrapper{
+     margin-bottom: 10px;
+    }
+     .loginbox-wrapper{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* Featurettes
+------------------------- */
+
+.featurette {
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    overflow: hidden; 
+    
+    .featurette-image {
+        //margin-top: -120px; 
+        max-width: 500px;
+    }
+    .featurette-image.pull-left {
+        margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+        margin-left: 40px;
+    }
+    .featurette-heading {
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: -1px;
+        @media @LandscapePhonePortraitTablet{
+             font-size: 30px;
+        }
+    }
+    @media @largeDesktop{          
+            margin-top: 10px;
+        }
+        @media @PortraitTabletLandscapeDesktop{
+            height: auto;
+            padding: 0;
+            margin-top: 10px;
+           
+        }
+        
+        @media @LandscapePhonePortraitTablet{
+            .featurette .lead {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+            margin-top: 10px;
+             .featurette-image.pull-left,
+            .featurette-image.pull-right {
+                display: block;
+                float: none;
+                max-width: 40%;
+                margin: 0 auto 20px;
+            }
+            padding-top:0px;
+        }   
+        
+
+}
+
+
+header#page-header-login {
+    font-size: 0.95em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#facebook-icon{
+    background-image: url([[pix:theme|facebook]]) ;  
+    .socialMediaGeneralSettings;
+    
+}
+#twitter-icon{
+    background-image: url([[pix:theme|twitter]]) ;  
+    .socialMediaGeneralSettings;
+    
+}
+#youtube-icon{
+    background-image: url([[pix:theme|youtube]]) ;  
+    .socialMediaGeneralSettings;
+    
+}
+
+
+
+.socialmedia{
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    
+    & > a {
+       display: inline-block;
+    }
+    
+    @media @LandscapePhonePortraitTablet{
+        top:20%;  
+    }   
+}
+
